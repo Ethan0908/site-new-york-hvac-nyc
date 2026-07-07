@@ -1,0 +1,370 @@
+{
+  "designRead": {
+    "business": "New York HVAC NYC",
+    "market": "Manhattan",
+    "vertical": "HVAC listed as General Contractor",
+    "knownFacts": [
+      "Phone: (631) 500-2060",
+      "Website: http://newyorkhvacnyc.com/",
+      "Service area: manhattan",
+      "Lead notes include: hvac, 3.7 rating, 3 Google reviews, 5 W 32nd St 3rd floor, New York, NY 10001, USA"
+    ],
+    "missingData": [
+      "No supplied photos",
+      "No logo",
+      "No email",
+      "No explicit service list",
+      "No testimonials",
+      "No license, warranty, emergency, same-day, or years-in-business claims"
+    ],
+    "artDirection": "manhattan-mechanical-field-guide",
+    "positioning": "A premium editorial single-page site that helps Manhattan visitors make a direct HVAC call with clear context and no inflated claims.",
+    "antiGenericRules": [
+      "Do not use stock photography",
+      "Do not invent awards, guarantees, licensing, response times, or emergency availability",
+      "Do not make a centered SaaS hero plus three cards",
+      "Use request architecture and buyer guidance instead of fake proof"
+    ]
+  },
+  "dials": {
+    "DESIGN_VARIANCE": 7,
+    "MOTION_INTENSITY": 3,
+    "VISUAL_DENSITY": 5
+  },
+  "colourScheme": {
+    "concept": "Warm editorial paper balanced by Manhattan steel and copper mechanical accents.",
+    "tokens": {
+      "paper": "#f5f1eb",
+      "paperWarm": "#ebe2d6",
+      "ink": "#15110d",
+      "muted": "#6f655b",
+      "surface": "rgba(255,255,255,0.78)",
+      "surfaceStrong": "#ffffff",
+      "copper": "#9b5f2b",
+      "copperDark": "#5b3318",
+      "steel": "#244653",
+      "steelDark": "#102a33",
+      "utility": "#d9e4df",
+      "rule": "rgba(21,17,13,0.16)",
+      "inverse": "#f8f4ee"
+    },
+    "usage": [
+      "Paper backgrounds for editorial pacing",
+      "Steel-dark for final CTA and footer contrast",
+      "Copper used sparingly for active states and primary CTAs",
+      "Utility green-grey for technical panels and diagram fields"
+    ]
+  },
+  "typography": {
+    "strategy": "Editorial display face paired with precise readable UI/body face.",
+    "display": "Fraunces",
+    "body": "Instrument Sans",
+    "scale": {
+      "hero": "clamp(3.2rem, 7vw, 7.6rem)",
+      "sectionTitle": "clamp(2.2rem, 4.5vw, 5rem)",
+      "body": "16px to 18px",
+      "small": "0.82rem to 0.95rem"
+    },
+    "rules": [
+      "H1 should land in 2 to 3 desktop lines",
+      "Use short labels, not SECTION 01 style meta labels",
+      "Do not use Arial, Helvetica, or browser default font as the identity",
+      "Keep letter spacing at 0 except tiny positive tracking for short utility labels if needed"
+    ]
+  },
+  "customFonts": {
+    "provider": "next/font/google",
+    "imports": [
+      {
+        "name": "Fraunces",
+        "weights": [
+          "600",
+          "700",
+          "800"
+        ],
+        "cssVariable": "--font-display",
+        "usage": "Hero, section statements, final CTA headline"
+      },
+      {
+        "name": "Instrument_Sans",
+        "weights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ],
+        "cssVariable": "--font-body",
+        "usage": "Body, navigation, buttons, panels, labels"
+      }
+    ],
+    "fallback": "If Google font access fails during build, keep the variables but use a carefully declared serif/sans fallback stack as backup."
+  },
+  "assetPlan": {
+    "photos": "No supplied photos and stock assets are not allowed.",
+    "logo": "Use a typographic wordmark for New York HVAC NYC.",
+    "primaryVisual": "CSS-only Manhattan mechanical map panel with grid lines, airflow arrows, building blocks, and contact callouts.",
+    "supportingVisuals": [
+      "Thin rule systems",
+      "Mechanical label chips",
+      "Asymmetric proof/contact panels",
+      "High-contrast final CTA linework"
+    ],
+    "forbidden": [
+      "Unrelated stock photos",
+      "Fake logo marks",
+      "Fake badges",
+      "Fake certification or award art"
+    ]
+  },
+  "sections": [
+    {
+      "id": "top",
+      "component": "SiteHeader",
+      "purpose": "Premium navigation with real anchors and visible call CTA.",
+      "content": [
+        "Brand wordmark",
+        "HVAC in Manhattan microline",
+        "Scope, Guide, Process, Contact anchors",
+        "Call CTA",
+        "Website link"
+      ]
+    },
+    {
+      "id": "hero",
+      "component": "Hero",
+      "purpose": "Art-directed first viewport with service, area, and call path.",
+      "content": [
+        "Headline: Manhattan HVAC calls, routed with clear next steps.",
+        "Short deck grounded in supplied business data",
+        "Call now CTA",
+        "Visit website CTA",
+        "MechanicalMapPanel"
+      ]
+    },
+    {
+      "id": "positioning",
+      "component": "PositioningStrip",
+      "purpose": "Compact factual context instead of fake trust badges.",
+      "content": [
+        "Manhattan service area",
+        "HVAC listed business",
+        "Phone-first contact",
+        "3.7 rating and 3 reviews noted in lead data"
+      ]
+    },
+    {
+      "id": "thesis",
+      "component": "LocalThesis",
+      "purpose": "Business-specific editorial point of view about Manhattan HVAC intake.",
+      "content": [
+        "Large statement about context before assumptions",
+        "Short explanation of building access, equipment location, and symptoms",
+        "No-invented-claims trust note"
+      ]
+    },
+    {
+      "id": "scope",
+      "component": "RequestRouter",
+      "purpose": "Useful service architecture that does not pretend an explicit service list exists.",
+      "content": [
+        "Cooling call tab",
+        "Heating call tab",
+        "Airflow or ventilation tab",
+        "Contractor coordination tab",
+        "Call CTA per tab"
+      ]
+    },
+    {
+      "id": "guide",
+      "component": "DecisionGuide",
+      "purpose": "Sticky buyer guide for what to prepare before calling.",
+      "content": [
+        "Know the location",
+        "Name the symptom",
+        "Clarify constraints",
+        "Confirm the next step"
+      ]
+    },
+    {
+      "id": "proof",
+      "component": "ProofContext",
+      "purpose": "Honest proof and contact facts using only supplied lead data.",
+      "content": [
+        "Rating/review count as lead-data snapshot",
+        "Manhattan area",
+        "Website",
+        "Address from notes"
+      ]
+    },
+    {
+      "id": "process",
+      "component": "ProcessTimeline",
+      "purpose": "Call-to-next-step flow without timing or outcome promises.",
+      "content": [
+        "Call with issue and location",
+        "Share access and equipment context",
+        "Confirm appropriate next step",
+        "Continue through website if preferred"
+      ]
+    },
+    {
+      "id": "principles",
+      "component": "CommitmentsAccordion",
+      "purpose": "Accessible interaction that explains careful, factual expectations.",
+      "content": [
+        "Clear scope before assumptions",
+        "No invented promises on this page",
+        "Manhattan context matters",
+        "Direct contact beats vague forms"
+      ]
+    },
+    {
+      "id": "contact",
+      "component": "ContactPanel",
+      "purpose": "High-contrast conversion panel with real contact paths.",
+      "content": [
+        "Start with a direct call headline",
+        "Phone CTA",
+        "Website CTA",
+        "Address/listing note"
+      ]
+    },
+    {
+      "id": "footer",
+      "component": "SiteFooter",
+      "purpose": "Finished footer with brand, anchors, and factual data.",
+      "content": [
+        "Brand",
+        "HVAC in Manhattan",
+        "Phone",
+        "Website",
+        "Anchor links",
+        "Supplied-listing-data note"
+      ]
+    }
+  ],
+  "components": [
+    "normalizePhone",
+    "phoneHref",
+    "externalHref",
+    "businessFacts",
+    "requestTypes",
+    "decisionItems",
+    "processSteps",
+    "commitmentItems",
+    "SiteHeader",
+    "Hero",
+    "MechanicalMapPanel",
+    "PositioningStrip",
+    "LocalThesis",
+    "RequestRouter",
+    "DecisionGuide",
+    "ProofContext",
+    "ProcessTimeline",
+    "CommitmentsAccordion",
+    "ContactPanel",
+    "SiteFooter",
+    "MobileStickyCallBar"
+  ],
+  "interactions": [
+    {
+      "name": "Request router tabs",
+      "type": "React state or accessible button group",
+      "reason": "Helps visitors map their HVAC issue to a call context without fake service claims."
+    },
+    {
+      "name": "Commitments accordion",
+      "type": "details/summary or controlled disclosure",
+      "reason": "Adds useful interaction and keeps decision guidance scannable."
+    },
+    {
+      "name": "Anchor navigation",
+      "type": "Real section IDs with smooth-scroll only when motion is allowed",
+      "reason": "Makes the one-page site feel complete and navigable."
+    },
+    {
+      "name": "Mobile sticky call bar",
+      "type": "Fixed bottom CTA on small screens",
+      "reason": "Phone exists and is the main conversion path."
+    },
+    {
+      "name": "Hover/focus states",
+      "type": "CSS transitions and focus-visible rings",
+      "reason": "Polished accessibility without heavy motion."
+    }
+  ],
+  "ctaMap": {
+    "primaryPhone": {
+      "href": "tel:+16315002060",
+      "label": "Call now",
+      "locations": [
+        "Header",
+        "Hero",
+        "RequestRouter",
+        "DecisionGuide",
+        "ContactPanel",
+        "Footer",
+        "MobileStickyCallBar"
+      ]
+    },
+    "website": {
+      "href": "http://newyorkhvacnyc.com/",
+      "label": "Visit website",
+      "locations": [
+        "Header",
+        "Hero",
+        "ContactPanel",
+        "Footer",
+        "MobileStickyCallBar secondary if space allows"
+      ]
+    },
+    "email": {
+      "href": null,
+      "label": null,
+      "locations": [],
+      "note": "Do not render email CTA because business.email is empty."
+    }
+  },
+  "mobilePlan": {
+    "breakpoints": {
+      "desktop": "1024px and up",
+      "tablet": "720px to 1023px",
+      "mobile": "719px and below"
+    },
+    "rules": [
+      "Use overflow-x: hidden on the shell",
+      "Collapse hero to one column and keep CTA row visible",
+      "Give MechanicalMapPanel a stable aspect ratio",
+      "Turn positioning strip into a 2x2 grid",
+      "Make RequestRouter selector horizontally scroll-safe or stacked",
+      "Disable sticky positioning for DecisionGuide on mobile",
+      "Show MobileStickyCallBar and add bottom padding to main/footer",
+      "Keep all buttons readable and tappable at 44px minimum height"
+    ]
+  },
+  "stagePlan": [
+    "Read data/business.json, data/design.json, data/sections.json, data/site-plan.json, and DESIGN_SPEC.md before implementation.",
+    "Replace starter page and CSS from blank canvas while preserving factual JSON data.",
+    "Set up next/font/google with Fraunces and Instrument Sans.",
+    "Build helpers, content arrays, and full section composition in app/page.tsx.",
+    "Write CSS variables, layout grids, responsive rules, focus states, and reduced-motion handling in app/globals.css.",
+    "Add interactions for request tabs, accordion, anchors, and mobile call bar.",
+    "Run build and visually inspect desktop and mobile for overflow, hierarchy, contrast, and generic-template failure."
+  ],
+  "qaChecklist": [
+    "At least 9 meaningful sections plus footer are present",
+    "Custom fonts are loaded through next/font/google",
+    "No stock images or fabricated business photos are used",
+    "No fake awards, licenses, guarantees, emergency availability, same-day claims, warranties, or years in business appear",
+    "Rating and reviews are presented neutrally as lead-data context if shown",
+    "Phone CTA uses tel:+16315002060",
+    "Website CTA uses http://newyorkhvacnyc.com/",
+    "No empty email/logo/photo placeholders render",
+    "Hero is art-directed and not a centered generic SaaS layout",
+    "Service architecture is not just repeated cards",
+    "Mobile has sticky CTA and no horizontal overflow",
+    "Focus states and reduced-motion handling exist",
+    "Final CTA and footer are complete",
+    "The page cannot be rebranded for any other contractor by changing only the name"
+  ]
+}
